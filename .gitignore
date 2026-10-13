@@ -1,0 +1,30 @@
+# ─── Node.js ──────────────────────────────────────────────────
+node_modules/
+dist/
+build/
+.cache/
+
+# ─── Environment ──────────────────────────────────────────────
+.env
+.env.local
+
+# ─── Reports & Runtime artifacts ──────────────────────────────
+reports/*.db
+reports/*.jsonl
+reports/state_*.json
+reports/run_*_report.md
+reports/screenshots/
+
+# ─── Logs ─────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ─── OS ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Editor ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user

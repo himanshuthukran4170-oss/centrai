@@ -1,0 +1,22 @@
+{
+  "name": "centrali-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "setup": "npm install && npm run -w server playwright:install",
+    "dev": "concurrently --kill-others-on-fail \"npm run dev -w server\" \"npm run dev -w client\"",
+    "seed": "npm run seed -w server",
+    "test": "npm run test -w server",
+    "demo": "npm run demo -w server",
+    "demo-all": "npm run demo-all -w server",
+    "start": "concurrently \"npm run start -w server\" \"npm run start -w client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
